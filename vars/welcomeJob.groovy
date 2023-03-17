@@ -1,3 +1,3 @@
-def printBranch(String barnch = 'main'){
+def call(String barnch = 'main'){
     echo "Build progress -  ${name}"
 }
