@@ -1,3 +1,3 @@
-def call(String barnch = 'main'){
+def call(barnch){
     echo "Build progress -  ${barnch}"
 }
