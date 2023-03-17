@@ -4,7 +4,7 @@
 * New parameters will be added later 
 */
 def call(){
-    yaml '''
+    yaml = '''
         apiVersion: v1
         kind: Pod
         metadata:
@@ -18,6 +18,5 @@ def call(){
             - cat
             tty: true
         '''
-
-        return yaml;
+        return yaml
 }
