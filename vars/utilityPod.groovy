@@ -15,11 +15,6 @@ spec:
         - "sleep"
       args:
         - "infinity"
-      resources:
-        limits:
-          memory: "128Mi"
-          cpu: "500m"
-
     '''
     return yaml
 }
