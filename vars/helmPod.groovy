@@ -11,6 +11,7 @@ def call(){
           labels:
             some-label: helm
         spec:
+          serviceAccountName: jenkins-admin
           containers:
           - name: helm
             image: lachlanevenson/k8s-helm:v3.1.1
