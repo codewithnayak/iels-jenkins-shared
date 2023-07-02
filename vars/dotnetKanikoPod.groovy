@@ -25,14 +25,14 @@ yaml = '''
         volumeMounts:
         - name: kaniko-secret
           mountPath: /kaniko/.docker
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /secret/kaniko-secret.json
       restartPolicy: Never
       volumes:
       - name: kaniko-secret
         secret:
-            secretName: dockercred
-            items:
-            - key: .dockerconfigjson
-              path: config.json
+            secretName: kaniko-secret
 '''
 return yaml
 }
