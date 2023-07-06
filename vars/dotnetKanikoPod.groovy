@@ -32,7 +32,10 @@ yaml = '''
       volumes:
       - name: kaniko-secret
         secret:
-            secretName: kaniko-secret
+            secretName: dockercd
+            items:
+            - key: .dockerconfigjson
+              path: config.json
 '''
 return yaml
 }
