@@ -13,6 +13,8 @@ def call(){
             some-label: terraform
         spec:
           containers:
+          - name: jnlp
+            image: jenkins/inbound-agent:latest
           - name: terraform
             image: hashicorp/terraform
             command: ["/bin/sh", "-c"]
